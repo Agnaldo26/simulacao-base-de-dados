@@ -17,10 +17,11 @@ if(entradaInicial.toLocaleUpperCase() === 'S'){
     const retorno = livros.filter(livro => livro.categoria == entradaCategoria);
 
     console.table(retorno);
-} else {
+}// Se Não, mostra todos os livros em ordem crescente pela quantidade de páginas 
+else {
     const livrosOrdenados = livros.sort((a, b) => a.paginas - b.paginas);
     console.log('Essas são todos os livros disponíveis: \n');
     console.table(livrosOrdenados)
-}
+};
 
-// Se Não, mostra todos os livros em ordem crescente pela quantidade de páginas
+
